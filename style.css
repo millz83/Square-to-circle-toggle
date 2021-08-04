@@ -1,0 +1,52 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    overflow: hidden;
+}
+    .toggleWrapper {
+    position: relative;
+    transition: all .3s ease-in;
+    width: 300px;
+    height: 100px;
+    background-color: #35b3da;
+    border-radius: 0 125px 125px 0;
+    border: 5px solid #c3f352;
+    }
+
+    input {
+      display: none;
+    }
+    
+    .toggle {
+      transition: all 1.5s ease-in-out;
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      height: 82px;
+      width: 82px;
+      background-color: #212ee9;
+      transform: rotate(0deg);
+      box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+      cursor: pointer;
+    }
+    
+    input:checked  + .toggle {
+        background-color: #910479;
+        height: 86px;
+        width: 86px;
+        border-radius: 50%;
+        top: 7px;
+        left: 206px;
+        transform: rotate(360deg);
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+      }
+    
+  
+    
+  
